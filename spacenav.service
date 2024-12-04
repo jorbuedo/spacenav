@@ -1,0 +1,13 @@
+[Unit]
+Description=Spacenav Daemon
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/spacenav
+Restart=on-failure
+User=root
+Group=input
+
+[Install]
+WantedBy=multi-user.target
+

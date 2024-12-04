@@ -1,0 +1,2 @@
+SUBSYSTEM=="input", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c635", ACTION=="add", TAG+="systemd", ENV{SYSTEMD_WANTS}="spacenav.service"
+
