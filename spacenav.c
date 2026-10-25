@@ -14,7 +14,7 @@ int main() {
 	int fd;
 	int rc;
 
-	fd = open("/dev/input/by-id/usb-3Dconnexion_SpaceMouse_Compact-event-if00", O_RDONLY | O_NONBLOCK);
+	fd = open("/dev/input/by-id/usb-3Dconnexion_SpaceMouse_Compact-event-if00", O_RDONLY);
 	if (fd < 0) {
 		perror("Can't open device");
 		return EXIT_FAILURE;
